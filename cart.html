@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/861689887d.js"></script>
+  <title>Cart</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/header/logo.png" alt="logo" class="logo__img">
+        <div class="logo__name">Bran<span>d</span></div>
+      </a>
+      <form class="search" method="get">
+        <div class="search__browse">Browse <i class="fas fa-caret-down"></i></div>
+        <input type="text" class="search__input" name="search" placeholder="Search for Item...">
+        <button class="search__button"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="cart"><img src="img/header/cart.png" alt="cart"></div>
+      <div class="my-account"><a href="#">My Account <i class="fas fa-caret-down"></i></a></div>
+    </div>
+    <div class="header-line"></div>
+    <nav>
+      <ul class="nav-menu-top">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Man</a></li>
+        <li class="menu-item"><a href="#">Women</a></li>
+        <li class="menu-item"><a href="#">Kids</a></li>
+        <li class="menu-item"><a href="#">Accoseriese</a></li>
+        <li class="menu-item"><a href="#">Featured</a></li>
+        <li class="menu-item"><a href="#">Hot Deals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-title">
+        <span>New Arrivals</span>
+      </div>
+      <div class="breadcrumb-path">
+        <span>Home</span>
+        <span>/</span>
+        <span>Men</span>
+        <span>/</span>
+        <span>New Arrivals</span>
+      </div>
+    </div>
+  </div>
+  <div class="shopping-cart container">
+    <div class="shopping-cart-items">
+      <div class="shopping-cart-item">
+        <div class="shopping-cart-item-first">
+          <span>product Details</span>
+        </div>
+        <div class="shopping-cart-item-other">
+          <div class="shopping-cart-item-other-field"><span>unite price</span></div>
+          <div class="shopping-cart-item-other-field"><span>quantity</span></div>
+          <div class="shopping-cart-item-other-field"><span>shipping</span></div>
+          <div class="shopping-cart-item-other-field"><span>subtotal</span></div>
+          <div class="shopping-cart-item-other-field"><span>action</span></div>
+        </div>
+      </div>
+      <div class="shopping-cart-item">
+        <div class="shopping-cart-item-first">
+          <img src="img/cart/cart1.png" alt="cart1">
+          <div class="shopping-cart-item-first-properties">
+            <h4>Mango People T-shirt</h4>
+            <div>
+              <span>Color: <span>Red</span></span>
+              <span>Size: <span>Xll</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-cart-item-other">
+          <div class="shopping-cart-item-other-field"><span>$150</span></div>
+          <div class="shopping-cart-item-other-field">
+            <input type="number" class="shopping-cart-item-other__input" name="quantity" min="1" value="1">
+          </div>
+          <div class="shopping-cart-item-other-field"><span>FREE</span></div>
+          <div class="shopping-cart-item-other-field"><span>$300</span></div>
+          <div class="shopping-cart-item-other-field">
+            <button type="button"><i class="fas fa-times-circle"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart-item">
+        <div class="shopping-cart-item-first">
+          <img src="img/cart/cart2.png" alt="cart2">
+          <div class="shopping-cart-item-first-properties">
+            <h4>Mango People T-shirt</h4>
+            <div>
+              <span>Color: <span>Red</span></span>
+              <span>Size: <span>Xll</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-cart-item-other">
+          <div class="shopping-cart-item-other-field"><span>$150</span></div>
+          <div class="shopping-cart-item-other-field">
+            <input type="number" class="shopping-cart-item-other__input" name="quantity" min="1" value="1">
+          </div>
+          <div class="shopping-cart-item-other-field"><span>FREE</span></div>
+          <div class="shopping-cart-item-other-field"><span>$300</span></div>
+          <div class="shopping-cart-item-other-field">
+            <button type="button"><i class="fas fa-times-circle"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-cart-item">
+        <div class="shopping-cart-item-first">
+          <img src="img/cart/cart3.png" alt="cart3">
+          <div class="shopping-cart-item-first-properties">
+            <h4>Mango People T-shirt</h4>
+            <div>
+              <span>Color: <span>Red</span></span>
+              <span>Size: <span>Xll</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="shopping-cart-item-other">
+          <div class="shopping-cart-item-other-field"><span>$150</span></div>
+          <div class="shopping-cart-item-other-field">
+            <input type="number" class="shopping-cart-item-other__input" name="quantity" min="1" value="1">
+          </div>
+          <div class="shopping-cart-item-other-field"><span>FREE</span></div>
+          <div class="shopping-cart-item-other-field"><span>$300</span></div>
+          <div class="shopping-cart-item-other-field">
+            <button type="button"><i class="fas fa-times-circle"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopping-cart-buttons">
+      <button class="shopping-cart-button shopping-cart-button-clear" type="button"><span>cLEAR SHOPPING CART</span></button>
+      <button class="shopping-cart-button shopping-cart-button-continue" type="button"><span>cONTINUE sHOPPING</span></button>
+    </div>
+    <div class="shopping-cart-form">
+      <div class="shopping-cart-form-item">
+        <form class="" action="index.html" method="get">
+          <h4>Shipping Adress</h4>
+          <input list="country" name="country">
+          <datalist id="country">
+            <option value="Bangladesh">
+          </datalist>
+          <input list="state" name="state" placeholder="State">
+          <input list="postcode" name="postcode" placeholder="Postcode / Zip">
+          <button class="shopping-cart-form-item__button" type="button"><span>get a quote</span></button>
+        </form>
+      </div>
+      <div class="shopping-cart-form-item">
+        <form class="" action="index.html" method="get">
+          <h4>coupon discount</h4>
+          <span>Enter your coupon code if you have one</span>
+          <input list="state" name="state" placeholder="State">
+          <button class="shopping-cart-form-item__button" type="button"><span>Apply coupon</span></button>
+        </form>
+      </div>
+      <div class="shopping-cart-form-item">
+        <h6><span>Sub total</span><span>$900</span></h6>
+        <h4><span>GRAND TOTAL</span><span>$900</span></h4>
+        <div class="shopping-cart-form-item-line"></div>
+        <button class="shopping-cart-form-item__button" type="button"><span>proceed to checkout</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe subscribe-image">
+    <div class="subscribe subscribe-background">
+      <div class="container">
+        <div class="subscribe-info-outer">
+          <div class="subscribe-info-inner">
+            <img src="img/subscribe/ellipse.png" alt="ellipse">
+            <div class="subscribe-info-text">
+              <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+              <div class="subscribe-info-name">
+                <span>Bin Burhan</span>
+                Dhaka, Bd
+              </div>
+              <ul class="subscribe-info-slider">
+                <li>
+                  <div></div>
+                </li>
+                <li>
+                  <div></div>
+                </li>
+                <li>
+                  <div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe-line"></div>
+        <div class="subscribe-form-outer">
+          <div class="subscribe-form-inner">
+            <div class="subscribe-form-text">
+              <span>Subscribe</span>
+              for our newletter and promotion
+            </div>
+            <form class="subscribe-form-email" method="get">
+              <input type="email" name="search" placeholder="Enter Your Email">
+              <button type="button"><span>Subscribe</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer container">
+    <div class="footer-info">
+      <a href="index.html" class="logo">
+        <img src="img/header/logo.png" alt="logo" class="logo__img">
+        <div class="logo__name">Bran<span>d</span></div>
+      </a>
+      <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and <nobr>
+          cross-unit</nobr> partnerships.</p>
+      <br>
+      <p>Efficiently plagiarize 24/365 action items and focused infomediaries.<br />
+        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+      <br>
+      <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate <nobr>next-generation</nobr> results for <nobr>value-added</nobr> methodologies. Dynamically plagiarize unique methodologies after
+        performance based methodologies. Monotonectally empower <nobr>stand-alone</nobr> mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+      <br>
+      <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+    </div>
+    <div class="footer-nav-menu-bottom">
+      <nav>
+        <div>
+          <div class="footer-nav-menu-bottom-item">COMPANY</div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Home</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Shop</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">About</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">How It Works</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Contact</a></div>
+        </div>
+        <div>
+          <div class="footer-nav-menu-bottom-item">INFORMATION</div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Tearms & Condition</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Privacy Policy</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">How to Buy</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">How to Sell</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Promotion</a></div>
+        </div>
+        <div>
+          <div class="footer-nav-menu-bottom-item">SHOP CATEGORY</div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Men</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Women</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Child</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Apparel</a></div>
+          <div class="footer-nav-menu-bottom-item"><a href="#">Brows All</a></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>&copy; 2017 Brand All Rights Reserved.</span>
+      <div class="social">
+        <ul class="social-items">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+header .container {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+
+  > * {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__name {
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-left: 13px;
+}
+
+.logo__name span {
+  color: #f16d7f;
+  font-weight: 900;
+}
+
+.search {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  height: 38px;
+  margin-left: 37px;
+}
+
+.search__input {
+  height: inherit;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 15px;
+  width: 265px;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #a4a4a4;
+}
+
+.search__button {
+  outline: none;
+  overflow: hidden;
+  border: none;
+  background-color: #ffffff;
+  padding: 12px;
+  width: 37px;
+}
+
+.search__button:hover {
+  background-image: linear-gradient(to bottom, #f1efef 0, #f1efef 100%);
+}
+
+.search__browse {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  padding: 14px 9px 14px 15px;
+  background-image: linear-gradient(to bottom, #e4e4e4 0, #f5f5f5 100%);
+
+  >i {
+    margin-left: 8px;
+  }
+}
+
+.search__browse:hover {
+  background-image: linear-gradient(to bottom, #f1efef 0, #f1efef 100%);
+}
+
+.cart {
+  margin-left: auto;
+}
+
+.header-line {
+  border-bottom: 1px solid #ececec;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  min-height: 51px;
+  font-size: 14px;
+  font-weight: 700;
+
+  .nav-menu-top {
+    height: inherit;
+    min-width: 680px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
+
+    a {
+      text-transform: uppercase;
+    }
+
+    li {
+      padding: 0 6px 15px;
+    }
+
+    li:hover {
+      border-bottom: 3px solid #ef5b70;
+      padding: 0 6px 12px;
+    }
+  }
+}
+
+.my-account {
+  width: 130px;
+  height: 38px;
+  background-color: $main-color;
+  justify-content: center;
+  margin-left: 26px;
+
+  a {
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+  }
+
+  i {
+    margin-left: 8px;
+  }
+}
+
+.my-account:hover {
+  background-color: $main-color-hover;
+}
