@@ -1,7 +1,12 @@
-$container-width: 1140px;
+$wrapper-width: 1140px;
 $footer-info-width: 430px;
 $main-color: #f16d7f;
 $main-color-hover: #bd5866;
 $grey-color: #898989;
 $grey-color-hover: #b5b5b5;
 $shopping-cart-form-height: 214px;
+$like-also-item-height: 364px;
+$like-also-item-image-height: 280px;
+$like-also-item-description-height: $like-also-item-height - $like-also-item-image-height;
+$sidebar-item-width: 241px;
+$sidebar-item-height: 37px;

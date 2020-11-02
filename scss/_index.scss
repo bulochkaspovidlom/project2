@@ -217,13 +217,21 @@
 }
 
 .feature {
+  min-height: 723px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.feature-inner {
+  min-height: 529px;
+  display: inherit;
   background-color: #222224;
-  margin-top: 113px;
 }
 
 .feature-img {
-  height: 529px;
+  // height: 529px;
   width: 767px;
 }
 

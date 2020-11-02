@@ -1,46 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-input:hover {
-  outline: 1px solid #b5b5b5;
-}
-
-.breadcrumb {
-  display: flex;
-  height: 148px;
-  background-color: #f8f3f4;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.breadcrumb-title {
-  span {
-    font-size: 24px;
-    line-height: 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #f16d7f;
-  }
-}
-
-.breadcrumb-path {
-  span {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #636363;
-  }
-  span:last-child {
-    font-weight: 700;
-    color: #f16d7f;
-  }
-}
-
 .shopping-cart {
   min-height: 1123px;
   display: flex;
@@ -56,7 +16,7 @@ input:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eaeaea;
+  @include separator(#eaeaea);
 
   .shopping-cart-item-other {
     min-width: 625px;
@@ -169,7 +129,7 @@ input:hover {
 }
 
 .shopping-cart-button:hover {
-  @include setHoverForShoppingCartButton($grey-color-hover);
+  @include setHoverForButton($grey-color-hover);
 }
 
 .shopping-cart-button-clear {
@@ -200,7 +160,7 @@ input:hover {
     }
 
     .shopping-cart-form-item__button:hover {
-      @include setHoverForShoppingCartButton($grey-color-hover);
+      @include setHoverForButton($grey-color-hover);
     }
   }
 
@@ -212,7 +172,7 @@ input:hover {
     }
 
     .shopping-cart-form-item__button:hover {
-      @include setHoverForShoppingCartButton($grey-color-hover);
+      @include setHoverForButton($grey-color-hover);
     }
   }
 
@@ -229,7 +189,7 @@ input:hover {
     .shopping-cart-form-item-line {
       width: 273px;
       margin-top: 22px;
-      border-bottom: 1px solid #e2e2e2;
+      @include separator(#e2e2e2);
     }
 
     h6 {
@@ -265,7 +225,7 @@ input:hover {
     }
 
     .shopping-cart-form-item__button:hover {
-      @include setHoverForShoppingCartButton($main-color-hover);
+      @include setHoverForButton($main-color-hover);
     }
   }
 
