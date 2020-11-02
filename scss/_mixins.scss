@@ -1,0 +1,28 @@
+@import 'variables';
+
+@mixin getShoppingCartButton($width, $height, $backgroundColor, $fontSize, $color) {
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor;
+  border: 1px solid #eaeaea;
+  border-radius: 0;
+
+  span {
+    font-size: $fontSize;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color;
+  }
+}
+
+@mixin setHoverForShoppingCartButton($backgroundColor) {
+  background-color: $backgroundColor;
+
+  span {
+    color: #ffffff;
+  }
+}

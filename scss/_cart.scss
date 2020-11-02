@@ -1,0 +1,309 @@
+@import 'variables';
+@import 'mixins';
+
+input:hover {
+  outline: 1px solid #b5b5b5;
+}
+
+.breadcrumb {
+  display: flex;
+  height: 148px;
+  background-color: #f8f3f4;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.breadcrumb-title {
+  span {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+}
+
+.breadcrumb-path {
+  span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+  }
+  span:last-child {
+    font-weight: 700;
+    color: #f16d7f;
+  }
+}
+
+.shopping-cart {
+  min-height: 1123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shopping-cart-items {
+  width: inherit;
+}
+
+.shopping-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+
+  .shopping-cart-item-other {
+    min-width: 625px;
+    display: flex;
+    margin-right: -38px;
+  }
+
+  .shopping-cart-item-other-field {
+    min-width: 125px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.shopping-cart-item:first-child {
+  height: 52px;
+  span {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+  }
+}
+
+.shopping-cart-item:not(:first-child) {
+  min-height: 165px;
+  .shopping-cart-item-first {
+    width: 278px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .shopping-cart-item-other {
+
+    span {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #656565;
+    }
+
+    input {
+      width: 53px;
+      height: 29px;
+      border: 1px solid #eaeaea;
+      text-align: center;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      background-color: #ffffff;
+      color: #c0c0c0;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    button:focus {
+      outline: none;
+      color: $grey-color-hover;
+    }
+  }
+}
+
+.shopping-cart-item-first-properties {
+  h4 {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 38px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #575757;
+
+      >span {
+        font-weight: 300;
+        color: #6f6e6e;
+      }
+    }
+  }
+}
+
+.shopping-cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+.shopping-cart-button:focus {
+  outline: none;
+}
+
+.shopping-cart-button:hover {
+  @include setHoverForShoppingCartButton($grey-color-hover);
+}
+
+.shopping-cart-button-clear {
+  @include getShoppingCartButton(235px, 50px, #ffffff, 14px, #4a4a4a);
+}
+
+.shopping-cart-button-continue {
+  @include getShoppingCartButton(225px, 50px, #ffffff, 14px, #4a4a4a);
+}
+
+.shopping-cart-form {
+  height: $shopping-cart-form-height;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+
+  .shopping-cart-form-item {
+    display: flex;
+    height: inherit;
+  }
+
+  .shopping-cart-form-item:nth-child(1) {
+    height: 268px;
+
+    .shopping-cart-form-item__button {
+      @include getShoppingCartButton(100px, 35px, #ffffff, 11px, #4a4a4a);
+    }
+
+    .shopping-cart-form-item__button:hover {
+      @include setHoverForShoppingCartButton($grey-color-hover);
+    }
+  }
+
+  .shopping-cart-form-item:nth-child(2) {
+    height: 184px;
+
+    .shopping-cart-form-item__button {
+      @include getShoppingCartButton(118px, 35px, #ffffff, 11px, #4a4a4a);
+    }
+
+    .shopping-cart-form-item__button:hover {
+      @include setHoverForShoppingCartButton($grey-color-hover);
+    }
+  }
+
+  .shopping-cart-form-item:nth-child(3) {
+    width: 318px;
+    height: $shopping-cart-form-height - 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #f5f3f3;
+    padding-top: 40px;
+    padding-right: 42px;
+
+    .shopping-cart-form-item-line {
+      width: 273px;
+      margin-top: 22px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    h6 {
+      width: 101px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #4a4a4a;
+    }
+
+    h4 {
+      width: 165px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+      margin-top: 14px;
+
+      span:nth-child(2) {
+        color: $main-color;
+      }
+    }
+
+    .shopping-cart-form-item__button {
+      @include getShoppingCartButton(273px, 50px, $main-color, 16px, #ffffff);
+      margin-top: 17px;
+    }
+
+    .shopping-cart-form-item__button:hover {
+      @include setHoverForShoppingCartButton($main-color-hover);
+    }
+  }
+
+  form {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    h4 {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #000000;
+    }
+
+    input {
+      width: 337px;
+      height: 45px;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #b1b1b1;
+      padding-left: 18px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+}
