@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Checkout page</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/header/logo.png" alt="logo" class="logo__img">
+        <div class="logo__name">Bran<span>d</span></div>
+      </a>
+      <form class="search" method="get">
+        <div class="search__browse">Browse <i class="fas fa-caret-down"></i></div>
+        <input type="text" class="search__input" name="search" placeholder="Search for Item...">
+        <button class="search__button"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="cart"><img src="img/header/cart.png" alt="cart"></div>
+      <div class="my-account"><a href="#">My Account <i class="fas fa-caret-down"></i></a></div>
+    </div>
+    <div class="header-line"></div>
+    <nav>
+      <ul class="nav-menu-top">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Man</a></li>
+        <li class="menu-item"><a href="#">Women</a></li>
+        <li class="menu-item"><a href="#">Kids</a></li>
+        <li class="menu-item"><a href="#">Accoseriese</a></li>
+        <li class="menu-item"><a href="#">Featured</a></li>
+        <li class="menu-item"><a href="#">Hot Deals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="breadcrumb-wrapper">
+    <div class="wrapper">
+      <div class="breadcrumb-wrapper-title">
+        <span>New Arrivals</span>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li class="active">New Arrivals</li>
+      </ol>
+    </div>
+  </div>
+  <div class="shipping wrapper">
+    <div class="panel-group shipping-items">
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            <h3>01.  Shipping Adress</h3>
+          </a>
+        </div>
+        <div id="collapse1" class="collapse in">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail1">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control inputEmail" id="inputEmail1" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword1">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control inputPassword" id="inputPassword1" name="Password">
+                  </div>
+                  <div class="form-group registed-error error1">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            <h3>02.  BILLING INFORMATION</h3>
+          </a>
+        </div>
+        <div id="collapse2" class="collapse">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail2">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control inputEmail" id="inputEmail2" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword2">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control inputPassword" id="inputPassword2" name="Password">
+                  </div>
+                  <div class="form-group registed-error error2">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <h3>03.  SHIPPING INFORMATION</h3>
+          </a>
+        </div>
+        <div id="collapse3" class="collapse">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control" id="inputEmail" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control" id="inputPassword" name="Password">
+                  </div>
+                  <div class="form-group registed-error">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            <h3>04.  SHIPPING METHOD</h3>
+          </a>
+        </div>
+        <div id="collapse4" class="collapse">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control" id="inputEmail" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control" id="inputPassword" name="Password">
+                  </div>
+                  <div class="form-group registed-error">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            <h3>05.  PAYMENT METHOD</h3>
+          </a>
+        </div>
+        <div id="collapse5" class="collapse">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control" id="inputEmail" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control" id="inputPassword" name="Password">
+                  </div>
+                  <div class="form-group registed-error">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel shipping-item">
+        <div class="shipping-item-title">
+          <a role="button" data-toggle="collapse" data-parent=".shipping-items" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            <h3>06.  ORDER REVIEW</h3>
+          </a>
+        </div>
+        <div id="collapse6" class="collapse">
+          <div class="shipping-item-wrapper">
+            <div class="shipping-item-data">
+              <form class="guest" action="checkout.html" method="get">
+                <div class="guest-data">
+                  <div class="form-group guest-info">
+                    <h3>Check as a guest or register</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-radio">
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton1" value="option1" checked>
+                      <label for="radioButton1">checkout as guest</label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" name="radioButton" id="radioButton2" value="option2">
+                      <label for="radioButton2">register</label>
+                    </div>
+                  </div>
+                  <div class="form-group guest-info">
+                    <h3>register and save time!</h3>
+                    <span>Register with us for future convenience</span>
+                  </div>
+                  <div class="form-group guest-info">
+                    <span><i class="far fa-angle-double-right"></i> Fast and easy checkout</span>
+                    <span><i class="far fa-angle-double-right"></i> Easy access to your order history and status</span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default"><span>Continue</span></button>
+              </form>
+              <form class="registed" action="" method="post">
+                <div class="registed-data">
+                  <div class="form-group registed-info">
+                    <h3>Already registed?</h3>
+                    <span>Please log in below</span>
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputEmail">Email address <span class="requiredEmail">*</span></label>
+                    <input type="email" class="form-control" id="inputEmail" name="Email">
+                  </div>
+                  <div class="form-group registed-input">
+                    <label for="inputPassword">Password <span class="requiredPassword">*</span></label>
+                    <input type="password" class="form-control" id="inputPassword" name="Password">
+                  </div>
+                  <div class="form-group registed-error">
+                    <span>* Required Fileds</span>
+                  </div>
+                </div>
+                <div class="registed-buttons">
+                  <button type="submit" class="btn btn-default"><span>Log in</span></button>
+                  <a href="#">Forgot Password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="subscribe subscribe-image">
+      <div class="subscribe subscribe-background">
+        <div class="wrapper">
+          <div class="subscribe-info-outer">
+            <div class="subscribe-info-inner">
+              <img src="img/subscribe/ellipse.png" alt="ellipse">
+              <div class="subscribe-info-text">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <div class="subscribe-info-name">
+                  <span>Bin Burhan</span>
+                  Dhaka, Bd
+                </div>
+                <ul class="subscribe-info-slider">
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-line"></div>
+          <div class="subscribe-form-outer">
+            <div class="subscribe-form-inner">
+              <div class="subscribe-form-text">
+                <span>Subscribe</span>
+                for our newletter and promotion
+              </div>
+              <form class="subscribe-form-email" method="get">
+                <input type="email" name="search" placeholder="Enter Your Email">
+                <button type="button"><span>Subscribe</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer wrapper">
+      <div class="footer-info">
+        <a href="index.html" class="logo">
+          <img src="img/header/logo.png" alt="logo" class="logo__img">
+          <div class="logo__name">Bran<span>d</span></div>
+        </a>
+        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and <nobr>
+            cross-unit</nobr> partnerships.</p>
+        <br>
+        <p>Efficiently plagiarize 24/365 action items and focused infomediaries.<br />
+          Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        <br>
+        <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate <nobr>next-generation</nobr> results for <nobr>value-added</nobr> methodologies. Dynamically plagiarize unique methodologies after
+          performance based methodologies. Monotonectally empower <nobr>stand-alone</nobr> mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+        <br>
+        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+      </div>
+      <div class="footer-nav-menu-bottom">
+        <nav>
+          <div>
+            <div class="footer-nav-menu-bottom-item">COMPANY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Home</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Shop</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">About</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How It Works</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Contact</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">INFORMATION</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Tearms & Condition</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Privacy Policy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Buy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Sell</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Promotion</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">SHOP CATEGORY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Men</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Women</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Child</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Apparel</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Brows All</a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="wrapper">
+        <span>&copy; 2017 Brand All Rights Reserved.</span>
+        <div class="social">
+          <ul class="social-items">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/861689887d.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="scripts/checkout.js"></script>
+</body>
+</html>

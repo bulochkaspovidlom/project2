@@ -11,8 +11,8 @@ body {
   font-weight: 300;
 }
 
-ol, ul, h1, h2, h3, h4, h5, .radio, .form-group {
-  margin: 0;
+ol, ul, h1, h2, h3, h4, h5, .radio, .form-group, .panel {
+  margin: 0 !important;
 }
 
 a {
@@ -1410,7 +1410,7 @@ nav .nav-menu-top li:hover {
 
 .sidebar {
   height: 147px;
-  transition: height 0.5s ease-out;
+  transition: height 0.6s ease-out;
 }
 
 .sidebar.active {
@@ -1494,8 +1494,6 @@ nav .nav-menu-top li:hover {
 .shipping-items {
   min-height: 450px;
   width: inherit;
-  display: inherit;
-  flex-direction: column;
 }
 .shipping-items .active {
   min-height: 456px;
@@ -1508,17 +1506,21 @@ nav .nav-menu-top li:hover {
   flex-direction: column;
   border-bottom: 1px solid #e8e8e8;
 }
-.shipping-item > h3 {
+.shipping-item h3 {
   font-size: 16px;
-  line-height: 13px;
+  line-height: 74px;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
 }
 
-.shipping-item-data-wrapper {
+.shipping-item-title {
+  min-height: inherit;
+}
+
+.shipping-item-wrapper {
   height: 420px;
-  display: inherit;
+  display: flex;
   align-items: center;
   margin-bottom: 9px;
 }
@@ -1526,7 +1528,7 @@ nav .nav-menu-top li:hover {
 .shipping-item-data {
   height: 342px;
   width: 939px;
-  display: inherit;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -1599,20 +1601,44 @@ nav .nav-menu-top li:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.guest-radio .radio {
+.guest-radio .radio-item {
+  display: flex;
+  position: relative;
+}
+.guest-radio .radio-item input[type=radio] {
+  display: none;
+}
+.guest-radio .radio-item label {
   font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+  cursor: pointer;
 }
-.guest-radio .radio label {
-  min-height: 15px;
-  display: flex;
-  align-items: center;
+.guest-radio .radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin: 0 15px 0 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #222222;
+  background-color: transparent;
 }
-.guest-radio .radio label input[type=radio] {
-  margin-top: 0;
+.guest-radio .radio-item input[type=radio]:checked + label:after {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  content: " ";
+  display: block;
+  background: #222222;
 }
 
 .registed {
