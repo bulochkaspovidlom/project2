@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Single page</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/header/logo.png" alt="logo" class="logo__img">
+        <div class="logo__name">Bran<span>d</span></div>
+      </a>
+      <form class="search" method="get">
+        <div class="search__browse">Browse <i class="fas fa-caret-down"></i></div>
+        <input type="text" class="search__input" name="search" placeholder="Search for Item...">
+        <button class="search__button"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="cart"><img src="img/header/cart.png" alt="cart"></div>
+      <div class="my-account"><a href="#">My Account <i class="fas fa-caret-down"></i></a></div>
+    </div>
+    <div class="header-line"></div>
+    <nav>
+      <ul class="nav-menu-top">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Man</a></li>
+        <li class="menu-item"><a href="#">Women</a></li>
+        <li class="menu-item"><a href="#">Kids</a></li>
+        <li class="menu-item"><a href="#">Accoseriese</a></li>
+        <li class="menu-item"><a href="#">Featured</a></li>
+        <li class="menu-item"><a href="#">Hot Deals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="breadcrumb-wrapper">
+    <div class="wrapper">
+      <div class="breadcrumb-wrapper-title">
+        <span>New Arrivals</span>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li class="active">New Arrivals</li>
+      </ol>
+    </div>
+  </div>
+  <div class="image-slide">
+    <a href="#" class="image-slide-button">
+      <i class="fas fa-angle-left"></i>
+    </a>
+    <img class="image-slide-img" src="img/single/single1.png" alt="">
+    <a href="#" class="image-slide-button">
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </div>
+  <div class="product-description wrapper">
+    <div class="product-description-outer">
+      <div class="product-description-title">
+        <h5>WOMEN COLLECTION</h5>
+        <ul class="product-description-slider">
+          <li>
+            <a href="#"><div></div></a>
+          </li>
+          <li>
+            <a href="#"><div></div></a>
+          </li>
+          <li>
+            <a href="#"><div></div></a>
+          </li>
+        </ul>
+        <h2>Moschino Cheap And Chic</h2>
+      </div>
+      <p class="product-description-info">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before <nobr>cutting-edge</nobr> services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+      <div class="product-description-subinfo">
+        <h5>MATERIAL:<span> COTTON</span></h5>
+        <h5>DESIGNER:<span> BINBURHAN</span></h5>
+      </div>
+      <h2>$561</h2>
+      <div class="product-description-line"></div>
+      <form class="" action="single.html" method="get">
+        <div class="product-description__form__div">
+          <div class="product-description__form-item">
+            <span>CHOOSE COLOR</span>
+            <div class="color__div">
+              <div>
+                <div class="color__div-inner"></div>
+              </div>
+              <input type="text" list="color" name="color" value="" placeholder="color" autocomplete="off">
+            </div>
+            <datalist id="color">
+              <option value="Red"></option>
+              <option value="Black"></option>
+              <option value="Blue"></option>
+            </datalist>
+          </div>
+          <div class="product-description__form-item">
+            <span>CHOOSE SIZE</span>
+            <input type="text" list="size" name="size" value="" placeholder="size" autocomplete="off">
+            <datalist id="size">
+              <option value="XS"></option>
+              <option value="S"></option>
+              <option value="M"></option>
+              <option value="L"></option>
+              <option value="XL"></option>
+              <option value="XXL"></option>
+            </datalist>
+          </div>
+          <div class="product-description__form-item">
+            <span>QUANTITY</span>
+            <input type="number" name="quantity" min="1" value="1">
+          </div>
+        </div>
+        <button type="submit" class="product-description__form__button" name="button">
+          <img src="img/single/cart.png" class="product-description__form__img" alt="cart">
+          <img src="img/single/cart-white.png" class="product-description__form__img-white" alt="cart">
+          <span>Add to Cart</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="like-also wrapper">
+    <div class="like-also-title">
+      <span>you may like also</span>
+    </div>
+    <div class="like-also-items">
+      <div class="like-also-item">
+        <a href="#" class="like-also-item-image">
+          <img src="img/single/single2.png" alt="single2">
+        </a>
+        <div class="like-also-item-description">
+          <div class="like-also-item-description-info">
+            <span>BLAZE LEGGINGS</span>
+            <div class="like-also-item-description-info-price">
+              <span>$52.00</span>
+              <div class="rating rating-1">
+                <i class="rating-star fa-star far" id="rating-1" data-rating="1" role="radio"></i>
+                <i class="rating-star fa-star far" id="rating-2" data-rating="2" role="radio"></i>
+                <i class="rating-star fa-star far" id="rating-3" data-rating="3" role="radio"></i>
+                <i class="rating-star fa-star far" id="rating-4" data-rating="4" role="radio"></i>
+                <i class="rating-star fa-star far" id="rating-5" data-rating="5" role="radio"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="like-also-item">
+        <a href="#" class="like-also-item-image">
+          <img src="img/single/single3.png" alt="single3">
+        </a>
+        <div class="like-also-item-description">
+          <div class="like-also-item-description-info">
+            <span>ALEXA SWEATER</span>
+            <div class="like-also-item-description-info-price">
+              <span>$52.00</span>
+              <div class="rating rating-2">
+                <i class="far fa-star rating-star" id="rating-1" data-rating="1" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-2" data-rating="2" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-3" data-rating="3" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-4" data-rating="4" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-5" data-rating="5" role="radio"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="like-also-item">
+        <a href="#" class="like-also-item-image">
+          <img src="img/single/single4.png" alt="single4">
+        </a>
+        <div class="like-also-item-description">
+          <div class="like-also-item-description-info">
+            <span>AGNES TOP</span>
+            <div class="like-also-item-description-info-price">
+              <span>$52.00</span>
+              <div class="rating rating-3">
+                <i class="far fa-star rating-star" id="rating-1" data-rating="1" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-2" data-rating="2" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-3" data-rating="3" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-4" data-rating="4" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-5" data-rating="5" role="radio"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="like-also-item">
+        <a href="#" class="like-also-item-image">
+          <img src="img/single/single5.png" alt="single5">
+        </a>
+        <div class="like-also-item-description">
+          <div class="like-also-item-description-info">
+            <span>SYLVA SWEATER</span>
+            <div class="like-also-item-description-info-price">
+              <span>$52.00</span>
+              <div class="rating rating-4">
+                <i class="far fa-star rating-star" id="rating-1" data-rating="1" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-2" data-rating="2" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-3" data-rating="3" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-4" data-rating="4" role="radio"></i>
+                <i class="far fa-star rating-star" id="rating-5" data-rating="5" role="radio"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="subscribe subscribe-image">
+      <div class="subscribe subscribe-background">
+        <div class="wrapper">
+          <div class="subscribe-info-outer">
+            <div class="subscribe-info-inner">
+              <img src="img/subscribe/ellipse.png" alt="ellipse">
+              <div class="subscribe-info-text">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <div class="subscribe-info-name">
+                  <span>Bin Burhan</span>
+                  Dhaka, Bd
+                </div>
+                <ul class="subscribe-info-slider">
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-line"></div>
+          <div class="subscribe-form-outer">
+            <div class="subscribe-form-inner">
+              <div class="subscribe-form-text">
+                <span>Subscribe</span>
+                for our newletter and promotion
+              </div>
+              <form class="subscribe-form-email" method="get">
+                <input type="email" name="search" placeholder="Enter Your Email">
+                <button type="button"><span>Subscribe</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer wrapper">
+      <div class="footer-info">
+        <a href="index.html" class="logo">
+          <img src="img/header/logo.png" alt="logo" class="logo__img">
+          <div class="logo__name">Bran<span>d</span></div>
+        </a>
+        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and <nobr>
+            cross-unit</nobr> partnerships.</p>
+        <br>
+        <p>Efficiently plagiarize 24/365 action items and focused infomediaries.<br />
+          Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        <br>
+        <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate <nobr>next-generation</nobr> results for <nobr>value-added</nobr> methodologies. Dynamically plagiarize unique methodologies after
+          performance based methodologies. Monotonectally empower <nobr>stand-alone</nobr> mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+        <br>
+        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+      </div>
+      <div class="footer-nav-menu-bottom">
+        <nav>
+          <div>
+            <div class="footer-nav-menu-bottom-item">COMPANY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Home</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Shop</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">About</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How It Works</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Contact</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">INFORMATION</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Tearms & Condition</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Privacy Policy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Buy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Sell</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Promotion</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">SHOP CATEGORY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Men</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Women</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Child</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Apparel</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Brows All</a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="wrapper">
+        <span>&copy; 2017 Brand All Rights Reserved.</span>
+        <div class="social">
+          <ul class="social-items">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/861689887d.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="scripts/single.js"></script>
+</body>
+</html>

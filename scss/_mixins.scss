@@ -19,10 +19,197 @@
   }
 }
 
-@mixin setHoverForShoppingCartButton($backgroundColor) {
+@mixin getSingleButton($width, $height, $fontWeight, $borderRadius, $haveImg) {
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  border-radius: $borderRadius;
+
+  span {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: $fontWeight;
+    color: $main-color;
+
+    @if $haveImg {
+      margin-left: 15px;
+    }
+  }
+
+  img {
+    width: 26px;
+    height: 24px;
+  }
+}
+
+@mixin setHoverForButton($backgroundColor) {
   background-color: $backgroundColor;
 
   span {
+    color: #ffffff;
+  }
+}
+
+
+@mixin separator($color) {
+  border-bottom: 1px solid $color;
+}
+
+@mixin colorRadioButton($color) {
+  display: flex;
+  position: relative;
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  label {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 0 15px 0 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $color;
+    background-color: transparent;
+  }
+
+  input[type=radio]:checked + label:after {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    content: " ";
+    display: block;
+    background: $color;
+  }
+}
+
+@mixin productItems($height) {
+  min-height: $height;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin productItem($mainWidth, $mainHeight, $hoverWidth, $hoverHeight, $wrapWidth, $wrapHeight, $buttonsMap) {
+  position: relative;
+  width: $mainWidth;
+  height: $mainHeight;
+
+  &__hover {
+    @include _productItemHover($hoverWidth, $hoverHeight);
+
+    &__wrapper {
+      @include _productItemHoverWrapper($wrapWidth, $wrapHeight)
+    }
+
+    @each $name, $width, $height in $buttonsMap {
+      &__button__#{$name} {
+        @include _productItemHoverButton($width, $height);
+      }
+    }
+  }
+
+  .product-item__img {
+    @include _productItemImg;
+  }
+
+  .product-item-price {
+    @include _productItemPrice;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &:hover &__hover {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@mixin _productItemPrice {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-left: 13px;
+
+  span:first-child {
+    margin-top: 19px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6f6e6e;
+  }
+
+  span:last-child {
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $main-color;
+  }
+}
+
+@mixin _productItemImg {
+  display: block;
+  height: 280px;
+}
+
+@mixin _productItemHover($hoverWidth, $hoverHeight) {
+  position: absolute;
+  display: none;
+  width: $hoverWidth;
+  height: $hoverHeight;
+  background-color: rgba(58, 56, 56, 0.83);
+}
+
+@mixin _productItemHoverWrapper($wrapWidth, $wrapHeight) {
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: $wrapWidth;
+  height: $wrapHeight;
+  margin-top: 98px;
+}
+
+@mixin _productItemHoverButton($buttonWidth, $buttonHeight) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $buttonWidth;
+  height: $buttonHeight;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 7px;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
     color: #ffffff;
   }
 }

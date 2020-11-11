@@ -1,7 +1,22 @@
-$container-width: 1140px;
+$wrapper-width: 1140px;
 $footer-info-width: 430px;
 $main-color: #f16d7f;
 $main-color-hover: #bd5866;
 $grey-color: #898989;
 $grey-color-hover: #b5b5b5;
 $shopping-cart-form-height: 214px;
+$like-also-item-height: 364px;
+$like-also-item-image-height: 280px;
+$like-also-item-description-height: $like-also-item-height - $like-also-item-image-height;
+$sidebar-item-width: 241px;
+$sidebar-item-height: 37px;
+$productItemsHeight1: 802px;
+$productItemsHeight2: 1164px;
+$productItemWidth: 263px;
+$productItemButtons: (
+  (cart, 123px, 39px),
+  (change, 57px, 38px),
+  (like, 57px, 38px)
+);
+$productItemValuesSet1: $productItemWidth, 364px, $productItemWidth, 280px, 123px, 39px, $productItemButtons;
+$productItemValuesSet2: $productItemWidth, 364px, $productItemWidth, 280px, 123px, 85px, $productItemButtons;

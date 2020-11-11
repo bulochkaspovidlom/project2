@@ -1,0 +1,187 @@
+@import 'variables';
+@import 'mixins';
+
+.shipping {
+  min-height: 1022px;
+  display: flex;
+  align-items: center;
+}
+
+.shipping-items {
+  min-height: 450px;
+  width: inherit;
+
+  .active {
+    min-height: 456px;
+  }
+}
+
+.shipping-item {
+  min-height: 74px;
+  border-bottom: 1px solid #e8e8e8;
+
+  h3 {
+    font-size: 16px;
+    line-height: 74px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+  }
+}
+
+.shipping-item-title {
+  min-height: inherit;
+}
+
+.shipping-item-wrapper {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.shipping-item-data {
+  height: 342px;
+  width: 939px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guest {
+  height: inherit;
+  width: 261px;
+  margin-left: 35px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+
+  button {
+    @include getShoppingCartButton(180px, 50px, #ffffff, 14px, #4a4a4a);
+  }
+
+  button:hover {
+    @include setHoverForButton($grey-color-hover);
+  }
+}
+
+.guest-data {
+  height: 254px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guest-info, .registed-info {
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 13px;
+    line-height: 0.8;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  span {
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #b3b2b2;
+  }
+
+  i {
+    font-weight: 600;
+  }
+}
+
+.guest-radio {
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .radio-item {
+    @include colorRadioButton(#222222);
+  }
+}
+
+.registed {
+  height: inherit;
+  width: 390px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.registed-data {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.registed-input {
+  label {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+
+    .requiredEmail, .requiredPassword {
+      display: inherit;
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #ff0d0d;
+    }
+  }
+
+  input {
+    width: 390px;
+    height: 45px;
+    border-radius: 0;
+  }
+
+  input.invalid {
+  	border: 1px solid $main-color;
+  }
+
+  input.valid {
+  	border: 1px solid #eaeaea;
+  }
+}
+
+.registed-error {
+  opacity: 0;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+.registed-buttons {
+  width: 323px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    @include getShoppingCartButton(180px, 50px, #ffffff, 14px, #4a4a4a);
+  }
+
+  button:hover {
+    @include setHoverForButton($grey-color-hover);
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+  }
+}
