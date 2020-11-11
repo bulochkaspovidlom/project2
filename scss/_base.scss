@@ -11,8 +11,15 @@ body {
   font-weight: 300;
 }
 
-ol, ul, h1, h2, h3, h4, h5, .radio, .form-group, .panel {
-  margin: 0 !important;
+ol, ul, h1, h2, h3, h4, h5, .radio, .form-group, .panel-group, .panel {
+  // margin: 0 !important;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.panel-group .panel+.panel {
+  margin: 0;
 }
 
 a {

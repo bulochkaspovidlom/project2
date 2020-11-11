@@ -188,7 +188,7 @@
 }
 
 .product-description__form__button {
-  @include getSingleButton();
+  @include getSingleButton(inherit, 55px, 700, 0, true);
 
   .product-description__form__img-white {
     display: none;

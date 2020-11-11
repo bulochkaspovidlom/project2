@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Product page</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/header/logo.png" alt="logo" class="logo__img">
+        <div class="logo__name">Bran<span>d</span></div>
+      </a>
+      <form class="search" method="get">
+        <div class="search__browse">Browse <i class="fas fa-caret-down"></i></div>
+        <input type="text" class="search__input" name="search" placeholder="Search for Item...">
+        <button class="search__button"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="cart"><img src="img/header/cart.png" alt="cart"></div>
+      <div class="my-account"><a href="#">My Account <i class="fas fa-caret-down"></i></a></div>
+    </div>
+    <div class="header-line"></div>
+    <nav>
+      <ul class="nav-menu-top">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Man</a></li>
+        <li class="menu-item"><a href="#">Women</a></li>
+        <li class="menu-item"><a href="#">Kids</a></li>
+        <li class="menu-item"><a href="#">Accoseriese</a></li>
+        <li class="menu-item"><a href="#">Featured</a></li>
+        <li class="menu-item"><a href="#">Hot Deals</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="breadcrumb-wrapper">
+    <div class="wrapper">
+      <div class="breadcrumb-wrapper-title">
+        <span>New Arrivals</span>
+      </div>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li class="active">New Arrivals</li>
+      </ol>
+    </div>
+  </div>
+  <div class="catalog wrapper">
+    <div class="catalog-inner">
+      <nav class="sidebar">
+        <div class="panel-group sidebar-items">
+          <div class="panel sidebar-item">
+            <div class="sidebar-item-link">
+              <a role="button" data-toggle="collapse" data-parent=".sidebar-items" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                <span>Category</span>
+                <i class="fas fa-caret-down fa-caret__active"></i>
+              </a>
+            </div>
+            <div id="collapse1" class="collapse in">
+              <div class="sidebar-item-menu">
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Pants</a>
+                <a href="#">Polos</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shoes</a>
+                <a href="#">Shorts</a>
+                <a href="#">Sweaters & Knits</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Tanks</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel sidebar-item">
+            <div class="sidebar-item-link">
+              <a role="button" data-toggle="collapse" data-parent=".sidebar-items" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                <span>BRAND</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+            </div>
+            <div id="collapse2" class="collapse">
+              <div class="sidebar-item-menu">
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Pants</a>
+                <a href="#">Polos</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shoes</a>
+                <a href="#">Shorts</a>
+                <a href="#">Sweaters & Knits</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Tanks</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel sidebar-item">
+            <div class="sidebar-item-link">
+              <a role="button" data-toggle="collapse" data-parent=".sidebar-items" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                <span>dESIGNER</span>
+                <i class="fas fa-caret-down"></i>
+              </a>
+            </div>
+            <div id="collapse3" class="collapse">
+              <div class="sidebar-item-menu">
+                <a href="#">Accessories</a>
+                <a href="#">Bags</a>
+                <a href="#">Denim</a>
+                <a href="#">Hoodies & Sweatshirts</a>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Pants</a>
+                <a href="#">Polos</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shoes</a>
+                <a href="#">Shorts</a>
+                <a href="#">Sweaters & Knits</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Tanks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="product-catalog">
+        <div class="product-catalog__filter">
+          <div class="product-catalog__params">
+            <div class="product-catalog__params__trending">
+              <h3 class="product-catalog__params__title">Trending now</h3>
+              <div class="product-catalog__params__trending__body">
+                <a href="#">Bohemian</a>
+                <span> | </span>
+                <a href="#">Floral</a>
+                <span> | </span>
+                <a href="#">Lace</a>
+                <a href="#">Floral</a>
+                <span> | </span>
+                <a href="#">Lace</a>
+                <span> | </span>
+                <a href="#">Bohemian</a>
+              </div>
+            </div>
+            <div class="product-catalog__params__size">
+              <h3 class="product-catalog__params__title">Size</h3>
+              <div class="product-catalog__params__size__body">
+                <div class="size__input">
+                  <input id="xxs" type="checkbox" name="" value="">
+                  <label for="xxs">xxs</label>
+                </div>
+                <div class="size__input">
+                  <input id="l" type="checkbox" name="" value="">
+                  <label for="l">l</label>
+                </div>
+                <div class="size__input">
+                  <input id="xs" type="checkbox" name="" value="">
+                  <label for="xs">xs</label>
+                </div>
+                <div class="size__input">
+                  <input id="xl" type="checkbox" name="" value="">
+                  <label for="xl">xl</label>
+                </div>
+                <div class="size__input">
+                  <input id="s" type="checkbox" name="" value="">
+                  <label for="s">s</label>
+                </div>
+                <div class="size__input">
+                  <input id="xxl" type="checkbox" name="" value="">
+                  <label for="xxl">xxl</label>
+                </div>
+                <div class="size__input">
+                  <input id="m" type="checkbox" name="" value="">
+                  <label for="m">m</label>
+                </div>
+              </div>
+            </div>
+            <div class="product-catalog__params__price">
+              <h3 class="product-catalog__params__title">pRICE</h3>
+              <div class="product-catalog__params__price__body">
+                <input type="text" id="range__input" name="range__input" value="">
+                <div class="range__input__value">
+                  <span class="range__input__min"></span>
+                  <span class="range__input__max"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-catalog__behavior">
+            <div class="product-catalog__behavior__sort">
+              <div class="product-catalog__behavior__sort__label">
+                <span>Sort By</span>
+              </div>
+              <input type="text" list="sort" name="sort" value="" autocomplete="off">
+              <datalist id="sort">
+                <option selected value="Name"></option>
+                <option value="Price"></option>
+                <option value="Count"></option>
+              </datalist>
+            </div>
+            <div class="product-catalog__behavior__show">
+              <div class="product-catalog__behavior__show__label">
+                <span>Show</span>
+              </div>
+              <input type="text" list="show" name="show" value="" autocomplete="off">
+              <datalist id="show">
+                <option selected value="09"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+              </datalist>
+            </div>
+          </div>
+        </div>
+        <div class="product-catalog__items">
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/index/product1.png" alt="product1">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product2.png" alt="product2">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product3.png" alt="product3">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product4.png" alt="product4">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product5.png" alt="product5">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product6.png" alt="product6">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product7.png" alt="product7">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product8.png" alt="product8">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+          <div class="product-catalog__item">
+            <div class="product-catalog__item__hover">
+              <div class="product-catalog__item__hover__wrapper">
+                <button class="product-catalog__item__hover__button__cart">
+                  <div class="product-cart"><img src="img/index/product_cart.png" alt="product-cart"></div>
+                  <span>Add to Cart</span>
+                </button>
+                <button class="product-catalog__item__hover__button__change">
+                  <div class="product-cart"><img src="img/product/change.png" alt="change"></div>
+                </button>
+                <button class="product-catalog__item__hover__button__like">
+                  <div class="product-cart"><img src="img/product/like.png" alt="like"></div>
+                </button>
+              </div>
+            </div>
+            <img class="product-item__img" src="img/product/product9.png" alt="product8">
+            <div class="product-item-price">
+              <span>Mango People T-shirt</span>
+              <span>$52.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-catalog__pagination">
+          <nav>
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <i class="fas fa-angle-left" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6.....20</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button type="submit" class="product-catalog__pagination__button" name="button">
+            <span>View All</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="subscribe subscribe-image">
+      <div class="subscribe subscribe-background">
+        <div class="wrapper">
+          <div class="subscribe-info-outer">
+            <div class="subscribe-info-inner">
+              <img src="img/subscribe/ellipse.png" alt="ellipse">
+              <div class="subscribe-info-text">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <div class="subscribe-info-name">
+                  <span>Bin Burhan</span>
+                  Dhaka, Bd
+                </div>
+                <ul class="subscribe-info-slider">
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                  <li>
+                    <div></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe-line"></div>
+          <div class="subscribe-form-outer">
+            <div class="subscribe-form-inner">
+              <div class="subscribe-form-text">
+                <span>Subscribe</span>
+                for our newletter and promotion
+              </div>
+              <form class="subscribe-form-email" method="get">
+                <input type="email" name="search" placeholder="Enter Your Email">
+                <button type="button"><span>Subscribe</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer wrapper">
+      <div class="footer-info">
+        <a href="index.html" class="logo">
+          <img src="img/header/logo.png" alt="logo" class="logo__img">
+          <div class="logo__name">Bran<span>d</span></div>
+        </a>
+        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and <nobr>
+            cross-unit</nobr> partnerships.</p>
+        <br>
+        <p>Efficiently plagiarize 24/365 action items and focused infomediaries.<br />
+          Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        <br>
+        <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate <nobr>next-generation</nobr> results for <nobr>value-added</nobr> methodologies. Dynamically plagiarize unique methodologies after
+          performance based methodologies. Monotonectally empower <nobr>stand-alone</nobr> mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+        <br>
+        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+      </div>
+      <div class="footer-nav-menu-bottom">
+        <nav>
+          <div>
+            <div class="footer-nav-menu-bottom-item">COMPANY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Home</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Shop</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">About</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How It Works</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Contact</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">INFORMATION</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Tearms & Condition</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Privacy Policy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Buy</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">How to Sell</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Promotion</a></div>
+          </div>
+          <div>
+            <div class="footer-nav-menu-bottom-item">SHOP CATEGORY</div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Men</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Women</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Child</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Apparel</a></div>
+            <div class="footer-nav-menu-bottom-item"><a href="#">Brows All</a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="wrapper">
+        <span>&copy; 2017 Brand All Rights Reserved.</span>
+        <div class="social">
+          <ul class="social-items">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/861689887d.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="scripts/product.js"></script>
+</body>
+
+</html>
